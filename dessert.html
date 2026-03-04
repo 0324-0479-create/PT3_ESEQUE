@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dessert - McDonald's</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <img src="images/logo.png" alt="McDonald's Logo" class="logo">
+    <h1>McDonald's Philippines</h1>
+
+    <nav>
+        <a href="index.html">Main Course</a>
+        <a href="drinks.html">Drinks</a>
+        <a href="dessert.html">Dessert</a>
+    </nav>
+</header>
+
+<section class="menu">
+    <h2>Dessert</h2>
+
+    <div class="item">
+        <img src="images/sundae.avif" alt="Hot Fudge Sundae">
+        <p>Hot Fudge Sundae - ₱49</p>
+        Quantity: <input type="number" id="item1" value="0" min="0">
+    </div>
+
+    <div class="item">
+        <img src="images/mcflurry.avif" alt="McFlurry Oreo">
+        <p>McFlurry Oreo - ₱69</p>
+        Quantity: <input type="number" id="item2" value="0" min="0">
+    </div>
+
+    <div class="item">
+        <img src="images/applepie.avif" alt="Apple Pie">
+        <p>Apple Pie - ₱45</p>
+        Quantity: <input type="number" id="item3" value="0" min="0">
+    </div>
+
+    <h3>Enter Age:</h3>
+    <input type="number" id="age" placeholder="Enter your age">
+
+    <button onclick="computeTotal(49,69,45)">Compute Total</button>
+
+    <div class="result">
+        <p>Original Total: ₱<span id="original"></span></p>
+        <p>Discount (12%): ₱<span id="discount"></span></p>
+        <p><strong>Final Payable: ₱<span id="final"></span></strong></p>
+    </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
